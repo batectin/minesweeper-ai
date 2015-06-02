@@ -1,4 +1,5 @@
-package minesweeper; /**
+package minesweeper;
+/**
  *    Copyright 2015 Felix & 3T
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -54,7 +55,7 @@ public class MineModel {
     /**
      * @param row the row where the cell is located
      * @param col the column where the cell is located
-     * @return Whether the cell is NOT_CHOSEN or has chosen with ZERO, ONE, TWO, THREE or FOUR
+     * @return Whether the cell is NOT_CHOSEN or has chosen with the number of
      * mine(s) around it
      */
     public MineCell getCellAt(int row, int col){
@@ -62,7 +63,7 @@ public class MineModel {
     }
 
     /**
-     * Change the cell data to one of the following { NOT_CHOSEN, ZERO, ONE, TWO, THREE, FOUR }
+     * Change the cell data
      * @param row the row where the cell is located
      * @param col the column where the cell is located
      * @param cellData the data to be set

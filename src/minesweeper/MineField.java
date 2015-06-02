@@ -1,4 +1,5 @@
-package minesweeper; /**
+package minesweeper;
+/**
  *    Copyright 2015 Felix & 3T
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -162,8 +163,7 @@ public class MineField extends JFrame {
     }
     /**
      * Update the cell to the GUI and data model
-     * Call when the data model of the cell is changed. Cell data could be set to
-     * one of the following values { NOT_CHOSEN, ZERO,ONE,TWO,THREE }
+     * Call when the data model of the cell is changed.
      * @param row the row at which the cell is located
      * @param col the column at which the cell is located
      * @param mineCell the cell data needed to be set
@@ -292,7 +292,6 @@ public class MineField extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 if(e.getButton()==MouseEvent.BUTTON3){ // Right mouse click
-                    //TODO: Implement your AI logic here
                     if(AIUnit.getInstance(mineModel).checkHasMineAt(row,col)){
                         aiLabel.setText("Mine!");
                     }else{
