@@ -78,7 +78,7 @@ public class MineModel {
         return MAX_COLUMN*MAX_ROW - mineCount;
     }
 
-    /** Randommize the mine field
+    /** Randommize the mine cell 
      * @param row the row where the cell is located
      * @param col the column where the cell is located
      * @param random the random instance to randomize the value */
