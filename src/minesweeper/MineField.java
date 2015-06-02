@@ -192,7 +192,7 @@ public class MineField extends JFrame {
             case SIX:
             case SEVEN:
             case EIGHT:
-                cell.setText(toColorizedNum(mineModel.getCellAt(row, col).ordinal() - 1));
+                cell.setText(toColorizedNum(MineCell.mineCellToInt(mineModel.getCellAt(row, col))));
                 cell.setIcon(SELECTED_MINE_CELL_ICON);
                 break;
         }
